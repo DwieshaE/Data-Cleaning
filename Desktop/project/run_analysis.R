@@ -46,5 +46,5 @@ write.table(data, './UCI HAR Dataset/merged.txt', row.names = F)
 averagesec <- aggregate(x=data, by=list(activities=data$activity, sub=data$subject), FUN=mean)
 averagesec <- average.df[, !(colnames(average.df) %in% c("subj", "activity"))]
 str(averagesec)
-write.table(averagesec, './UCI HAR Dataset/average.txt', row.names = F)
+write.table(averagesec, './UCI HAR Dataset/tidydata.txt', row.names = F)
 
