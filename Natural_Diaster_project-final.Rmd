@@ -1,8 +1,9 @@
+The Object of this project is to determine the type of natural disaster that caused most fatalies and property damage.
 
 
 ```{r}
-setwd("C:/Users/Eric/Desktop/Reproducible research")
-storm <- read.csv("C:/Users/Eric/Desktop/Reproducible research/repdata%2Fdata%2FStormData.csv.bz2", sep = ",", header= TRUE)
+setwd("C:/Users/dwiesha/Desktop/Reproducible research")
+storm <- read.csv("C:/Users/dwiesha/Desktop/Reproducible research/repdata%2Fdata%2FStormData.csv.bz2", sep = ",", header= TRUE)
 str(storm)
 ```
 
