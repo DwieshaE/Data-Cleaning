@@ -1,3 +1,6 @@
+The Object of this project is to determine the type of natural disaster that caused most fatalies and property damage.
+
+
 Read in data
 storm1 <- read.csv("C:/Users/Eric/Desktop/Reproducible research/stormData.csv.bz2", header = TRUE, sep = ",")
 
@@ -19,7 +22,7 @@ casualties <- ddply(storm, .(EVTYPE), summarize,
                     fatalities = sum(FATALITIES),
                     injuries = sum(INJURIES))
 
-# Find events that caused most death and injury
+# Find the top 10 events that caused most death and injury
 fatal_events <- head(casualties[order(casualties$fatalities, decreasing = T), ], 10)
 injury_events <- head(casualties[order(casualties$injuries, decreasing = T), ], 10)
 
@@ -138,5 +141,4 @@ The most severe weather event in terms of crop damage is the drought. In the las
 
 
 
-rpub.com/jmlee/storm
 
